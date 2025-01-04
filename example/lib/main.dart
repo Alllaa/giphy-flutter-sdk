@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:giphy_flutter_sdk/giphy_flutter_sdk.dart';
 import 'package:giphy_flutter_sdk_example/main_screen.dart';
-import 'config.dart' as config;
 
 void main() {
   runApp(const MyApp());
@@ -33,9 +32,9 @@ class _MyAppState extends State<MyApp> {
     try {
       String? apiKey;
       if (Platform.isAndroid) {
-        apiKey = config.androidGiphyApiKey;
+        apiKey = "dKWilzWT6HKrvSgUtPdDL6plsekNpAg8";
       } else if (Platform.isIOS) {
-        apiKey = config.iOSGiphyApiKey;
+        apiKey = "NMgbHRSWegb3UwsWgr27An57y5TbjyCD";
       } else {
         throw Exception('Unsupported platform');
       }
